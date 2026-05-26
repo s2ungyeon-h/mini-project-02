@@ -1,0 +1,116 @@
+<svg width="680" viewBox="0 0 680 1080" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif; background: white;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- START -->
+  <rect x="270" y="24" width="140" height="36" rx="18" fill="#f0f0f0" stroke="#aaa" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="46" text-anchor="middle" fill="#444">START</text>
+  <line x1="340" y1="60" x2="340" y2="84" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- parse_all -->
+  <rect x="240" y="84" width="200" height="48" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="105" text-anchor="middle" fill="#26215C">parse_all</text>
+  <text font-size="11" x="340" y="122" text-anchor="middle" fill="#534AB7">PPT 정보 분해</text>
+  <line x1="340" y1="132" x2="340" y2="156" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- tool_search -->
+  <rect x="240" y="156" width="200" height="48" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="177" text-anchor="middle" fill="#26215C">tool_search</text>
+  <text font-size="11" x="340" y="194" text-anchor="middle" fill="#534AB7">웹 검색 보완</text>
+  <line x1="340" y1="204" x2="340" y2="228" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- gen_text -->
+  <rect x="240" y="228" width="200" height="48" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="249" text-anchor="middle" fill="#26215C">gen_text</text>
+  <text font-size="11" x="340" y="266" text-anchor="middle" fill="#534AB7">페이지별 내용 생성</text>
+  <line x1="340" y1="276" x2="340" y2="300" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- gen_script -->
+  <rect x="240" y="300" width="200" height="48" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="321" text-anchor="middle" fill="#26215C">gen_script</text>
+  <text font-size="11" x="340" y="338" text-anchor="middle" fill="#534AB7">강의 스크립트 생성</text>
+  <line x1="340" y1="348" x2="340" y2="372" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- review_script -->
+  <rect x="240" y="372" width="200" height="48" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="393" text-anchor="middle" fill="#412402">review_script</text>
+  <text font-size="11" x="340" y="410" text-anchor="middle" fill="#854F0B">스크립트 검토 · FAQ</text>
+  <line x1="340" y1="420" x2="340" y2="444" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 조건부 분기 1: 검토 결과 다이아몬드 -->
+  <polygon points="340,444 388,472 340,500 292,472" fill="#f9f9f9" stroke="#888" stroke-width="1"/>
+  <text font-size="11" x="340" y="476" text-anchor="middle" fill="#555">검토 결과</text>
+
+  <!-- RETRY 루프 -->
+  <path d="M292 472 L150 472 L150 324 L240 324" fill="none" stroke="#bbb" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
+  <text font-size="11" x="100" y="400" text-anchor="middle" fill="#aaa" transform="rotate(-90,100,400)">RETRY</text>
+
+  <!-- PASS -->
+  <text font-size="11" x="362" y="514" fill="#888">PASS</text>
+  <line x1="340" y1="500" x2="340" y2="528" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- summ_script -->
+  <rect x="240" y="528" width="200" height="48" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="549" text-anchor="middle" fill="#412402">summ_script</text>
+  <text font-size="11" x="340" y="566" text-anchor="middle" fill="#854F0B">스크립트 요약</text>
+  <line x1="340" y1="576" x2="340" y2="600" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- tts -->
+  <rect x="240" y="600" width="200" height="48" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="621" text-anchor="middle" fill="#4A1B0C">tts</text>
+  <text font-size="11" x="340" y="638" text-anchor="middle" fill="#993C1D">음성 합성</text>
+  <line x1="340" y1="648" x2="340" y2="672" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- make_video -->
+  <rect x="240" y="672" width="200" height="48" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="693" text-anchor="middle" fill="#4A1B0C">make_video</text>
+  <text font-size="11" x="340" y="710" text-anchor="middle" fill="#993C1D">슬라이드 영상 제작</text>
+  <line x1="340" y1="720" x2="340" y2="744" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 조건부 분기 2: acc_step 다이아몬드 -->
+  <polygon points="340,744 388,772 340,800 292,772" fill="#f9f9f9" stroke="#888" stroke-width="1"/>
+  <text font-size="11" x="340" y="776" text-anchor="middle" fill="#555">acc_step</text>
+
+  <!-- continue 루프 -->
+  <path d="M388 772 L540 772 L540 180 L440 180" fill="none" stroke="#bbb" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
+  <text font-size="11" x="586" y="478" text-anchor="middle" fill="#aaa" transform="rotate(-90,586,478)">continue → 다음 슬라이드</text>
+
+  <!-- done -->
+  <text font-size="11" x="362" y="814" fill="#888">done</text>
+  <line x1="340" y1="800" x2="340" y2="828" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- concat -->
+  <rect x="240" y="828" width="200" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="849" text-anchor="middle" fill="#04342C">concat</text>
+  <text font-size="11" x="340" y="866" text-anchor="middle" fill="#0F6E56">영상 합치기</text>
+  <line x1="340" y1="876" x2="340" y2="900" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- make_summary -->
+  <rect x="240" y="900" width="200" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="921" text-anchor="middle" fill="#04342C">make_summary</text>
+  <text font-size="11" x="340" y="938" text-anchor="middle" fill="#0F6E56">강의 요약 생성</text>
+  <line x1="340" y1="948" x2="340" y2="972" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- make_summary_pdf -->
+  <rect x="240" y="972" width="200" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="993" text-anchor="middle" fill="#04342C">make_summary_pdf</text>
+  <text font-size="11" x="340" y="1010" text-anchor="middle" fill="#0F6E56">요약 PDF 출력</text>
+  <line x1="340" y1="1020" x2="340" y2="1044" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- END -->
+  <rect x="270" y="1044" width="140" height="36" rx="18" fill="#f0f0f0" stroke="#aaa" stroke-width="0.8"/>
+  <text font-size="13" font-weight="500" x="340" y="1066" text-anchor="middle" fill="#444">END</text>
+
+  <!-- 범례 -->
+  <rect x="30" y="470" width="12" height="12" rx="2" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text font-size="11" x="48" y="481" fill="#555">파싱 · 내용 생성</text>
+  <rect x="30" y="490" width="12" height="12" rx="2" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.8"/>
+  <text font-size="11" x="48" y="501" fill="#555">검토 · 요약</text>
+  <rect x="30" y="510" width="12" height="12" rx="2" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text font-size="11" x="48" y="521" fill="#555">음성 · 영상</text>
+  <rect x="30" y="530" width="12" height="12" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text font-size="11" x="48" y="541" fill="#555">합치기 · 출력</text>
+</svg>
